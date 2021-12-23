@@ -39,7 +39,7 @@ set wildmode=longest,list,full
 "New tab aliased to CTRL+t
 nnoremap <silent> <C-t> :tabnew<CR>
 
-"Helps if using with Windows/NT and GNU+Linux
+"Helps if using with Windows/NT and GNU+Linux at the same time
 "set nocompatible
 
 "Keeps buffers open
