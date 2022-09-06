@@ -4,35 +4,25 @@ packages: zsh and zsh-completions
 
 keep everything at defaults
 
-nano .zshrc
-add autoload -Uz promptinit and promptinit to end
-
-make sure curl/wget and git are installed
+make sure wget and git are installed
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-nano .zshrc
-change the theme to gnzh
-enable archlinux plugin
-uncomment enable auto update
-
-add neofetch | lolcat to the very top of zshrc
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 enable zsh-syntax-highlighting in .zshrc
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-enable zsh-autosuggestionsin .zshrc
+enable zsh-autosuggestions in .zshrc
 
-reload zsh by typing source .zshrc
-
+reload zsh
 
 
 POWERLEVEL10K
 
-make sure ttf-dejavu and ttf-meslo-nerd-font-powerlevel10k are installed using yay
+make sure ttf-dejavu and ttf-meslo-nerd-font-powerlevel10k are installed using aur helper
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
 change theme in .zshrc to "powerlevel10k/powerlevel10k"
 
 reload zsh
